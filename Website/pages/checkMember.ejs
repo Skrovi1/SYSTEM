@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Shop</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body style="background-color: #363940;">
+      <script src="./script.js"></script>
+      <% for (let i = 0; i < staff.length; i++) { %>
+           <img src="<%= client.users.cache.get(staff[i]).avatarURL() %>" width="15px" height="15px">  <p style="font-family: Arial;font-size: 10px;display: inline;padding: 10px 2px;"><%= client.users.cache.get(staff[i]).tag %><br></p>
+      <% } %>
+      <form method="put" action="/check">
+          <input type="text" name="id" class="check-input" placeholder="Enter the user id" value="<%= id %>">
+          <button type="submit" class="submit">Sumbit</button>
+      </form>
+      <% if (result) { %>
+          <p class="result"><%= result %></p>
+      <% } %>
+  </body>
+</html>

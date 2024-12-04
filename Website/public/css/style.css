@@ -1,0 +1,52 @@
+.submit {
+  display: block;
+  margin: 5% auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #221e6e;
+}
+
+.submit:hover {
+  background-color: #423bd9;
+  transition: 0.7s;
+}
+
+.check-input {
+  padding: 10px;
+  border: none;
+  color: red;
+  border-bottom: 2px solid #4f4f4f;
+  width: 200px;
+  text-align: left;
+  position: relative;
+  margin: 0% auto;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0px 0px 5px black;
+}
+
+.result {
+  color: red;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.nav {
+  background-color: #212226;
+  position: relative;
+  padding: 25px;
+  margin: -3%;
+  box-shadow: 1px 0px 3px black;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+}
+
+.nav a:hover {
+  color: gray;
+  transition: 0.3s;
+}
